@@ -102,6 +102,7 @@ public class MainStreamerActivity extends Activity implements
 						// TODO Auto-generated method stub
 						if (camera != null && previewing) {
 							camera.stopPreview();
+							camera.setPreviewCallback(null);
 							camera.release();
 							camera = null;
 							avcEncode.close();
